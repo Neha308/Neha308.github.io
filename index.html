@@ -1,1 +1,160 @@
-<h1>Project description</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title> Vote Coach </title>
+</head>
+<style type="text/css">
+    h1{color: black}
+    p{color: white}
+    #searchButton{color:black;}
+
+    h2{color: black}
+    
+    
+    body{background-color:white;}
+</style>
+<body>
+            
+<style>
+div.container {
+   width: 100%;
+   border: 1px solid gray;
+}
+
+header, footer {
+   padding: 0.5em;
+   color: white;
+   background-color:rgb(128,159,255) ;
+   clear: left;
+   text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header><link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+ <h1 style="font-family: 'Audiowide';font-size: 300%;">Vote Coach</h1><img src="https://i2.cdn.turner.com/money/dam/assets/161107113845-election2016-vote-780x439.jpg" width="300" height="300" class="circle responsive-img">
+<h2 style="font-family: Georgia, serif; font-size: 175%">Vote for what floats <em><strong>your</strong></em> boat!</h2>
+</header>
+
+<nav>
+
+
+</nav>
+
+<article>
+
+ <h2><center> Take Action!<center></h2>
+ <p><center> Vote Coach is a website that aims to help people who may not know much about their local elections and encourage them to exercise their right to vote. We also want to make voting easier by presenting them with a survey that will narrow down the candidates in certain elections. In addition to helping them decide, we give them an overview of polling stations that are nearby. Remember, our main goal is to help you VOTE for what floats <em>YOUR</em> boat!<center></p><br><body><div><center><h2>Candidates from local, regional, and national elections.</h2></center></div></body>
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color: black
+}
+
+tr:nth-child(even) {
+    background-color: rgb(128,159,255);
+}
+
+</style>
+</head>
+<body>
+<br>
+
+<h2>2018 Candidate Table</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Party</th>
+    <th>Summary</th>
+    <th>Where</th>
+    <th>Our Research</th>
+    <th>Candidate Statement</th>
+  </tr>
+  <tr>
+    <td><a style="color: black;" href="SusanneCupcakes.html" target=" blank">Susie Cupcakes </a></td>
+    <td>Liberal</td>
+    <td>Wants to make the world a better place, one cupcake at a time.</td>
+    <td>Local</td>
+    <td><a style="color: black;" href="SusanneCupcakes.html" target=" blank">Click Here</a></td>
+    <td>Coming Soon</td>
+  </tr>
+  <tr>
+    <td>Anita Break</td>
+    <td>Republican</td>
+    <td>I enjoy lounging around on the couch.</td>
+    <td>National</td>
+    <td><a style="color: black;" href= "AnitaBreak.html" target=" blank">Click Here </a></td>
+    <td>Coming Soon</td>
+  </tr>
+  <tr>
+    <td>Andy Johnson</td>
+    <td>Democrat</td>
+    <td>Just a normal average Joe.</td>
+    <td>State</td>
+    <td><a style="color: black;" href= "AndyJohnson.html" target=" blank"> Click Here</a></td>
+    <td>Coming Soon</td>
+  </tr>
+  <tr>
+    <td>Nick Fender</td>
+    <td>Republican</td>
+    <td>Don't get into a fender bender!</td>
+    <td>Local</td>
+    <td><a style="color: black;" href= "NickFender.html" target=" blank"> Click Here</a></td>
+    <td>Coming Soon</td>
+</table><br><br><br> </p>
+</article>
+
+<div>
+  <h5><center><a href="newSurvey.html" target=" blank"> Click here to help narrow down your choices!</a></center></h5>
+
+<div>
+
+<center><h2>Voting Locations</h2></center>
+<script>
+                function mySearch() {
+                        var textbox = document.getElementById('AreaCode');
+                        var map = document.getElementById('map');
+                
+                        map.src = "https://www.google.com/maps/embed/v1/search?q=Polling+Places"+textbox.value+"&key=AIzaSyBE-_cbT-AD-ScGKaW2XbrOLMZOGQ14sgs";
+
+                }
+
+                function display() {
+                        var textbox  = document.getElementById('AreaCode');
+                        textbox.style.display = "block";
+                }
+        </script>
+
+<div class = "smallBlock" onClick = "display();">
+
+                        <p><center>Enter Zip Code Here:</center></p>
+                        <input id = "AreaCode" type = "text">
+                <br>
+
+                </div>
+
+                <a class="smallerBlock" onClick = "mySearch();"><p id="searchButton"><center>Search</center></p></a>
+
+        </div>
+
+
+        <div id = "iframe"><center><iframe id="map" src="https://www.google.com/maps/embed/v1/search?q=Polling+Places+02139&key=AIzaSyBE-_cbT-AD-ScGKaW2XbrOLMZOGQ14sgs" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></center></div>
+
+</body>
+</html>
